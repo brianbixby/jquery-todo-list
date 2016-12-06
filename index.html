@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Front-End</title>
 </head>
+
 <body>
-  <h1>Hello Front-End</h1>
+  <div id="wrapper">
+    <div id="header">
+      <form>
+        <label for="enterName">
+        <input id="enterName" type="text" name="enterName" placeholder="Please Enter Your Name">
+        <img id="plus" class="addToDo" src="img/plus.png")>
+      </label>
+      </form>
+    </div>
+    <h1>To Do List</h1>
+
+    <p class="addToDo">
+      <id="subHeader"><img id="plus2" src="img/plus.png" )>Add task </p>
+    <div id="hiding" style="display:none;">
+      <form class="lowerForm">
+        <textarea placeholder="e.g. Start G.A. homework Tuesday @ 8:45am." id="toDoFormInput" name="text1" class="form2" cols="96" rows="5"></textarea>
+        <br>
+        <input id="submit" type="submit" name="" value="submit" onclick="return false">
+        <input type="reset" name="" value="cancel">
+      </form>
+    </div>
+    <div id="toDoListContainer">
+      <ol> </ol>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
